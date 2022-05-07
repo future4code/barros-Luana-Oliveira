@@ -11,13 +11,34 @@
  * 
  */
 
-    let boasVindas = `Boas vindas ao jogo de Blackjack!`
-      console.log(boasVindas);
+    console.log("Boas vindas ao jogos de Blackjack!")
 
-      if(confirm("Quer inciar uma nova rodada?")) {
-         // o que fazer se o usuário clicar "ok"
-      } else {
-         // o que fazer se o usuário clicar "cancelar"
-      }
+let iniciarPartida = confirm("Bem vindo(a), você deseja iniciar uma rodada? ♦️ ♥️ ♣️ ♠️")
+
+if (iniciarPartida) {
+   let carta1Usuario = comprarCarta()
+   let carta2Usuario = comprarCarta()
+   let carta1Computador = comprarCarta()
+   let carta2Computador = comprarCarta()
+
+   let pontuacaoUsuario = carta1Usuario.valor + carta2Usuario.valor
+   let pontuacaoComputador = carta1Computador.valor + carta2Computador.valor
+
+   console.log(`Usuario - cartas: ${carta1Usuario.texto} ${carta2Usuario} - ${pontuacaoUsuario}`);
+   console.log(`Computador - cartas: ${carta1Computador.texto} ${carta2Computador.texto} - ${pontuacaoComputador}`);
+
+   if (pontuacaoUsuario > pontuacaoComputador) {
+      console.log("Parabéns, você ganhou!!!");
+   } else if (pontuacaoComputador > pontuacaoUsuario) {
+      console.log("O computador ganhou!!!");
+   } else if (pontuacaoComputador === pontuacaoUsuario) {
+      console.log("Empate!!!");  
+    }
+
+} else {
+   console.log("O jogo acabou.");
+   }
 
    
+
+

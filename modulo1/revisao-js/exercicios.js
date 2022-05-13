@@ -153,16 +153,35 @@ function retornaPessoasAutorizadas(pessoas) {
 // EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
   
+    pessoasNaoAutorizadas = pessoas.filter((item)=>{
+        return item.idade <= 14 || item.idade >= 60 || item.altura < 1.5
+    })
+ return pessoasNaoAutorizadas
 }
+
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
 
+    
 }
+
 
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
   
+    let consultarOrdemAlfabetica = consultas.sort(function (a, b) {
+        if (a.nome > b.nome) {
+          return 1;
+        }
+        if (a.nome < b.nome) {
+          return -1;
+        }
+        return 0;
+      });
+
+    return consultarOrdemAlfabetica 
+
 }
 
 // EXERCÍCIO 15B

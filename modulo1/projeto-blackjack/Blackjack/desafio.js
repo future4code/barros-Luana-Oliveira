@@ -10,13 +10,4 @@
  * 
  * 
  */
-let boasVindas = `Boas vindas ao jogo de Blackjack!`
-   console.log(boasVindas);
-
-   (confirm("Quer iniciar uma nova rodada?"))
-   if(ok){
-      console.log(`Iniciar nova rodada`);
-
-   }
-
-
+  

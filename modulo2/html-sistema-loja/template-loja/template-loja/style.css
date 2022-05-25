@@ -1,0 +1,45 @@
+
+body {
+    font-size: 100%;
+    background-color: rgb(138, 104, 151);
+    
+}
+
+.boasvindas {
+    align-items: center;
+    padding: 30px;
+    color:cornsilk;
+    font-family: 'Macondo', cursive;
+
+}
+
+.descricao {
+    align-items:baseline
+
+   
+}
+
+.cabecalho-imagem {
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 35px;
+}
+
+.pagina-inicial {
+    font-family: 'Righteous', cursive;
+    color:cornsilk;
+    font-size: 18px
+}
+
+.quadro-funcionarios {
+    font-size: 100%;
+    background-color: rgb(138, 104, 151);
+
+}
+
+

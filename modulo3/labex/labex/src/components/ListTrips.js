@@ -2,7 +2,7 @@ import React from "react";
 import {useNavigate} from "react-router-dom"
 
 
-function ListaViagens (){
+function ListTrips (){
     const navigate = useNavigate();
 
 
@@ -28,4 +28,4 @@ function ListaViagens (){
     )
 }
 
-export default ListaViagens; 
+export default ListTrips; 

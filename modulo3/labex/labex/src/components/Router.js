@@ -6,7 +6,7 @@ import CreateTripPage from "./CreateTripPage";
 import ListTrips from "./ListTrips";
 import LoginPage from "./LoginPage";
 import TripDetails from "./TripDetails";
-import HomePage from "./HomePage";
+import HomePage from "./HomePage/HomePage";
 
 function Router() {
   return (
